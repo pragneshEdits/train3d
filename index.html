@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-camera  position="0 8 20"></a-camera>
+
+        <a-sky src = "https://thumbs.dreamstime.com/z/railway-track-isolated-white-background-d-rendering-illustration-side-view-89691253.jpg">
+
+        </a-sky>
+
+        <a-assets>
+            <a-asset-item id="tinker.obj" src="./model/train/tinker.obj"></a-asset-item>
+            <a-asset-item id="obj.mtl" src="./model/train/obj.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #tinker.obj;mtl: #obj.mtl" position="3 5 0" rotation="-90 0 0" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
+</body>
+</html>
